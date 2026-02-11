@@ -39,7 +39,7 @@ export default function App() {
           textAlign: "center",
         }}
       >
-        <h2>Random Joke</h2>
+        <h1>Random Joke</h1>
         <p>Click the button to fetch a fresh one.</p>
 
         <button onClick={fetchJoke} disabled={loading}>
@@ -61,7 +61,7 @@ export default function App() {
         {error && (
           <>
             <p style={{ color: "red" }}>Could not fetch a joke. Try again.</p>
-            <p style={{ color: "blue", cursor: "pointer" }} onClick={fetchJoke}>Try again</p>
+            <button onClick={fetchJoke}>Try again</button>
           </>
         )}
       </div>
